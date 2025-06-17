@@ -2,12 +2,12 @@
   "overlay": "https://raw.githubusercontent.com/soumaki/nowFy/main/nowfy.png",
   "text_positions": {
     "NOW_PLAYING": [40, 460],
-    "title": [40, 530],
-    "artist": [40, 600]
+    "title": [40, 525],
+    "artist": [40, 585]
   },
   "font_sizes": {
-    "now_playing": 60,
-    "title": 52,
-    "artist": 44
+    "now_playing": 54,
+    "title": 48,
+    "artist": 42
   }
 }
