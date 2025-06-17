@@ -5,32 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>nowFy – Login Helper</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #141e30, #243b55);
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       color: #fff;
       margin: 0;
       padding: 0;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
       min-height: 100vh;
     }
 
+    .wrapper {
+      width: 100%;
+      padding: 1em;
+    }
+
     .container {
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: rgba(0, 0, 0, 0.25);
       padding: 2em;
-      margin-top: 3em;
-      border-radius: 10px;
-      width: 90%;
+      border-radius: 12px;
       max-width: 600px;
+      margin: 0 auto;
     }
 
     h1 {
+      text-align: center;
       color: #00ffe5;
       font-size: 1.8em;
-      text-align: center;
-      margin-bottom: 0.5em;
+      margin-bottom: 0.3em;
     }
 
     p {
@@ -42,37 +50,42 @@
 
     label {
       font-weight: bold;
-      margin-bottom: 0.3em;
+      margin-top: 1em;
       display: block;
     }
 
     input[type="text"] {
       width: 100%;
-      padding: 0.7em;
-      margin-bottom: 1em;
+      padding: 0.75em;
+      margin-top: 0.5em;
+      margin-bottom: 1.2em;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
       font-size: 1em;
+      background: #f2f2f2;
+      color: #000;
     }
 
     .actions {
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
       gap: 10px;
+      justify-content: center;
       margin-bottom: 1.5em;
     }
 
     button {
-      flex: 1;
-      padding: 0.7em;
+      padding: 0.75em 1em;
       background: #00ffe5;
       border: none;
       color: #000;
       font-weight: bold;
-      border-radius: 5px;
+      border-radius: 6px;
       font-size: 1em;
       cursor: pointer;
-      transition: background 0.3s;
+      flex: 1 1 45%;
+      min-width: 120px;
+      transition: background 0.3s ease;
     }
 
     button:hover {
@@ -80,14 +93,10 @@
     }
 
     .output {
-      background: rgba(0, 0, 0, 0.25);
+      background: rgba(255, 255, 255, 0.1);
       padding: 1em;
-      border-radius: 8px;
+      border-radius: 10px;
       margin-top: 1em;
-    }
-
-    .output label {
-      margin-bottom: 0.5em;
     }
 
     .output .copy-group {
@@ -98,58 +107,72 @@
 
     .output input {
       flex: 1;
+      background: #fff;
+      color: #000;
     }
 
     .credit {
-      margin-top: 3em;
       text-align: center;
-      font-size: 0.85em;
-      color: #aaa;
+      margin-top: 2em;
+      font-size: 0.9em;
+      color: #ccc;
     }
 
     .credit a {
       color: #00ffe5;
       text-decoration: none;
     }
+
+    @media (max-width: 500px) {
+      .actions {
+        flex-direction: column;
+      }
+
+      button {
+        flex: 1 1 100%;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>nowFy – Login Helper</h1>
-    <p>Generate your Spotify login link and extract your code easily.</p>
+  <div class="wrapper">
+    <div class="container">
+      <h1>nowFy – Login Helper</h1>
+      <p>Generate your Spotify login link and get your <code>.code</code> easily.</p>
 
-    <label for="clientId">Your Spotify Client ID</label>
-    <input type="text" id="clientId" placeholder="Paste your client ID here" />
+      <label for="clientId">Spotify Client ID:</label>
+      <input type="text" id="clientId" placeholder="Paste your client ID here" />
 
-    <div class="actions">
-      <button onclick="generateAuthLink()">Generate Link</button>
-      <button onclick="openLink()">Open Link</button>
-    </div>
+      <div class="actions">
+        <button onclick="generateAuthLink()">Generate Link</button>
+        <button onclick="openLink()">Open Link</button>
+      </div>
 
-    <div class="output" id="linkBox" style="display: none;">
-      <label>🔗 Your Spotify Login Link</label>
-      <div class="copy-group">
-        <input type="text" id="authLink" readonly />
-        <button onclick="copyText('authLink')">Copy</button>
+      <div class="output" id="linkBox" style="display: none;">
+        <label>🔗 Authorization Link</label>
+        <div class="copy-group">
+          <input type="text" id="authLink" readonly />
+          <button onclick="copyText('authLink')">Copy</button>
+        </div>
+      </div>
+
+      <label for="redirectedUrl">Paste redirected URL (after login)</label>
+      <input type="text" id="redirectedUrl" placeholder="https://example.com/callback?code=..." />
+
+      <button onclick="extractCode()">Extract Code</button>
+
+      <div class="output" id="codeBox" style="display: none;">
+        <label>📎 nowFy Command:</label>
+        <div class="copy-group">
+          <input type="text" id="codeCommand" readonly />
+          <button onclick="copyText('codeCommand')">Copy</button>
+        </div>
+      </div>
+
+      <div class="credit">
+        🍏 Created by <a href="https://t.me/ApplePlugins" target="_blank">@ApplePlugins</a>
       </div>
     </div>
-
-    <label for="redirectedUrl" style="margin-top: 2em;">Paste the URL after login</label>
-    <input type="text" id="redirectedUrl" placeholder="https://example.com/callback?code=..." />
-
-    <button onclick="extractCode()">Extract Code</button>
-
-    <div class="output" id="codeBox" style="display: none;">
-      <label>📎 Your nowFy command:</label>
-      <div class="copy-group">
-        <input type="text" id="codeCommand" readonly />
-        <button onclick="copyText('codeCommand')">Copy</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="credit">
-    🍏 Made with 💚 by <a href="https://t.me/ApplePlugins" target="_blank">@ApplePlugins</a>
   </div>
 
   <script>
