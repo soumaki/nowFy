@@ -56,11 +56,8 @@ You'll be redirected to a URL like:
 
 ```
 https://example.com/callback?code=YOUR_CODE_HERE
+
 ```
-
-![nowFy](img/code.png)
-
----
 
 ## 5. Submit the Code
 
