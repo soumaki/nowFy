@@ -1,0 +1,27 @@
+{
+  "current_version": "1.0.1",
+  "last_updated": "2024-03-20",
+  "changelog": [
+    {
+      "version": "1.0.1",
+      "date": "2024-03-20",
+      "sections": {
+        "added": [
+          "Testando a changelog",
+          "Testando a changelog",
+          "Testando a changelog"
+        ],
+        "changed": [
+          "Testando a changelog",
+          "Testando a changelog",
+          "Testando a changelog"
+        ],
+        "fixed": [
+          "Testando a changelog",
+          "Testando a changelog",
+          "Testando a changelog"
+        ]
+      }
+    }
+  ]
+}
