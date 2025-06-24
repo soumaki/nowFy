@@ -1,0 +1,34 @@
+{
+  "custom_fonts_info": {
+    "en": {
+      "description": "To use custom fonts, you need to have the font file in the directory Android/media/com.exteragram.messenger and create a folder named 'fonts' there.",
+      "steps": [
+        "Open your Android file manager.",
+        "Navigate to Android/media/com.exteragram.messenger.",
+        "Create a new folder called 'fonts' if it doesn't exist.",
+        "Place your custom font files (e.g., .ttf or .otf) inside the 'fonts' folder.",
+        "Restart the app to apply the custom fonts."
+      ]
+    },
+    "ru": {
+      "description": "Чтобы использовать пользовательские шрифты, необходимо иметь файл шрифта в директории Android/media/com.exteragram.messenger и создать там папку с названием 'fonts'.",
+      "steps": [
+        "Откройте файловый менеджер на Android.",
+        "Перейдите в папку Android/media/com.exteragram.messenger.",
+        "Создайте новую папку с именем 'fonts', если её нет.",
+        "Поместите файлы пользовательских шрифтов (например, .ttf или .otf) в папку 'fonts'.",
+        "Перезапустите приложение, чтобы применить пользовательские шрифты."
+      ]
+    },
+    "pt": {
+      "description": "Para usar fontes customizadas, você precisa ter o arquivo da fonte no diretório Android/media/com.exteragram.messenger e criar uma pasta chamada 'fonts' lá.",
+      "steps": [
+        "Abra o gerenciador de arquivos do Android.",
+        "Navegue até Android/media/com.exteragram.messenger.",
+        "Crie uma nova pasta chamada 'fonts', se ainda não existir.",
+        "Coloque os arquivos das fontes customizadas (ex.: .ttf ou .otf) dentro da pasta 'fonts'.",
+        "Reinicie o aplicativo para aplicar as fontes customizadas."
+      ]
+    }
+  }
+}
