@@ -10,6 +10,26 @@
         "Restart the app to apply the custom fonts."
       ]
     },
+    "pt": {
+      "description": "Para usar fontes customizadas, você precisa ter o arquivo da fonte no diretório Android/media/com.exteragram.messenger e criar uma pasta chamada 'fonts' lá.",
+      "steps": [
+        "Abra o gerenciador de arquivos do Android.",
+        "Navegue até Android/media/com.exteragram.messenger.",
+        "Crie uma nova pasta chamada 'fonts', se ainda não existir.",
+        "Coloque os arquivos das fontes customizadas (ex.: .ttf ou .otf) dentro da pasta 'fonts'.",
+        "Reinicie o aplicativo para aplicar as fontes customizadas."
+      ]
+    },
+    "es": {
+      "description": "Para usar fuentes personalizadas, necesitas tener el archivo de fuente en el directorio Android/media/com.exteragram.messenger y crear allí una carpeta llamada 'fonts'.",
+      "steps": [
+        "Abre el gestor de archivos de tu Android.",
+        "Navega a Android/media/com.exteragram.messenger.",
+        "Crea una nueva carpeta llamada 'fonts' si aún no existe.",
+        "Coloca los archivos de fuentes personalizadas (por ejemplo, .ttf o .otf) dentro de la carpeta 'fonts'.",
+        "Reinicia la aplicación para aplicar las fuentes personalizadas."
+      ]
+    },
     "ru": {
       "description": "Чтобы использовать пользовательские шрифты, необходимо иметь файл шрифта в директории Android/media/com.exteragram.messenger и создать там папку с названием 'fonts'.",
       "steps": [
@@ -20,14 +40,14 @@
         "Перезапустите приложение, чтобы применить пользовательские шрифты."
       ]
     },
-    "pt": {
-      "description": "Para usar fontes customizadas, você precisa ter o arquivo da fonte no diretório Android/media/com.exteragram.messenger e criar uma pasta chamada 'fonts' lá.",
+    "fr": {
+      "description": "Pour utiliser des polices personnalisées, vous devez avoir le fichier de police dans le répertoire Android/media/com.exteragram.messenger et y créer un dossier nommé 'fonts'.",
       "steps": [
-        "Abra o gerenciador de arquivos do Android.",
-        "Navegue até Android/media/com.exteragram.messenger.",
-        "Crie uma nova pasta chamada 'fonts', se ainda não existir.",
-        "Coloque os arquivos das fontes customizadas (ex.: .ttf ou .otf) dentro da pasta 'fonts'.",
-        "Reinicie o aplicativo para aplicar as fontes customizadas."
+        "Ouvrez le gestionnaire de fichiers Android.",
+        "Accédez à Android/media/com.exteragram.messenger.",
+        "Créez un nouveau dossier nommé 'fonts' s’il n’existe pas.",
+        "Placez vos fichiers de polices personnalisées (par ex. .ttf ou .otf) dans le dossier 'fonts'.",
+        "Redémarrez l’application pour appliquer les polices personnalisées."
       ]
     }
   }
