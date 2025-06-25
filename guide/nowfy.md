@@ -1,5 +1,5 @@
 # Spotify Plugin – Step-by-Step Login Guide
-![nowFy](img/nowfy-np.jpg)  
+![nowFy](https://github.com/soumaki/nowFy/raw/main/img/nowfy-np.jpg)
 This guide will help you set up your Spotify credentials and use the plugin to display your currently playing track.
 
 ---
@@ -12,7 +12,7 @@ This guide will help you set up your Spotify credentials and use the plugin to d
 - **Add a Redirect URI** (required), e.g.:  
   `https://example.com/callback`
 
-![nowFy](img/callback.png)
+![nowFy](https://github.com/soumaki/nowFy/blob/main/img/callback.png)
 
 - Check the **“I understand”** box to accept Spotify’s terms
 - Click **"Create"**
@@ -23,7 +23,7 @@ This guide will help you set up your Spotify credentials and use the plugin to d
 
 - After creating the app, copy your **Client ID** and **Client Secret**
 
-![nowFy](img/ClientID.png)
+![nowFy](https://github.com/soumaki/nowFy/blob/main/img/ClientID.png)
 
 ---
 
@@ -65,7 +65,7 @@ This will generate a personalized link using your Client ID.
 ➡️ Return to the chat and **open the same link again**.  
 This time, it will redirect you to a URL like:
 
-![nowFy](img/App.png)
+![nowFy](https://github.com/soumaki/nowFy/blob/main/img/App.png)
 
 ```
 https://example.com/callback?code=YOUR_CODE_HERE
@@ -82,8 +82,7 @@ Paste the code into the plugin using:
 ```
 .code YOUR_CODE_HERE
 ```
-
-![nowFy](img/code.png)
+![nowFy](https://github.com/soumaki/nowFy/blob/main/img/code.png)
 
 ---
 
