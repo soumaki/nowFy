@@ -8,21 +8,25 @@
       "date": "2024-03-20",
       "sections": {
         "added": [
-          "Testando a changelog",
-          "Testando a changelog",
-          "Testando a changelog",
-          "Testando a changelog",
-          "Ok, né?"
+          "Music control commands: play/pause (.p), next (.n), previous (.b)",
+          "Notifications (bulletins) for some commands",
+          "Search tracks and albums (.s and .s .album) with top 5 results",
+          "Play selected track or album via .play <number>",
+          "Option to display now playing info in chat after .play",
+          "List last 5 played tracks with .list command",
+          "New progress bar themes (Now Bar)",
+          "Quick access via sidebar, 3-dot menu, or .dev command"
         ],
         "changed": [
-          "Testando a changelog",
-          "Testando a changelog",
-          "Testando a changelog"
+          "Improved setup flow for easier and intuitive configuration",
+          "Enhanced translations for multiple languages",
+          "Streamlined command list with .use showing all available commands",
+          "Changelog integrated inside the plugin"
         ],
         "fixed": [
-          "Testando a changelog",
-          "Testando a changelog",
-          "Testando a changelog"
+          "Code polishing for better stability and performance",
+          "Bug fixes related to playback controls and search",
+          "Improved error handling and user feedback messages"
         ]
       }
     }
