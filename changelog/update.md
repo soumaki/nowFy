@@ -47,7 +47,10 @@ And again, to play the album:
 ---
 
 ## NOW PLAYING HIGHLIGHTS  
-Want to revisit your recent tracks? nowFy can show you the last songs you’ve played with a simple command.
+Want to revisit your recent tracks? nowFy can show you the last songs you’ve played with a simple command using:  
+```
+.list
+```
 
 ---
 
@@ -79,7 +82,19 @@ Truly plug-and-play!
 ---
 
 ## COMMANDS  
-Check out the new `.use` command to view all available nowFy commands in one place.
+Check out the new `.use` command to view all available nowFy commands in one place, including:  
+• `.now` — Show current playing track  
+• `.n` — Skip to next track  
+• `.b` — Go back to previous track  
+• `.p` — Play or pause current track  
+• `.list` — Show last 5 played tracks  
+• `.setid` — Set your Spotify Client ID  
+• `.setsecret` — Set your Spotify Client Secret  
+• `.code` — Set authorization code  
+• `.check` — Validate your credentials  
+• `.update` — Generate new permission URL  
+• `.help` — Show setup instructions  
+• `.use` — Show this command list
 
 ---
 
