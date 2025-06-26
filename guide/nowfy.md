@@ -9,7 +9,8 @@ This guide will help you set up your Spotify credentials and use the plugin to d
 - Go to [https://developer.spotify.com/dashboard](https://developer.spotify.com/dashboard)
 - Click **"Create an App"**
 - Fill in the app name and description
-- **Add a Redirect URI** (required), e.g.:  
+- **Add a Redirect URI** (required), MANDATORY:
+- THIS ONE: 
   `https://example.com/callback`
 
 ![nowFy](https://github.com/soumaki/nowFy/blob/main/img/callback.png)
