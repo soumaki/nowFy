@@ -97,6 +97,9 @@ Check out the new `.use` command to view all available nowFy commands in one pla
 • `.use` — Show this command list
 
 ---
+## NOTE
+If you're unable to skip, go back, or control playback, it's very likely that you're using a Free Spotify account. Spotify imposes strict limitations on non-Premium users, and unfortunately, there's nothing we can do to bypass those restrictions.
+Premium users have full access to all playback features.
 
 ## UNDER THE HOOD  
 - Code has been polished for better performance and stability  
