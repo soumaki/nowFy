@@ -1,18 +1,33 @@
 # YouTube API Key (YouTube Data API v3)
 
-
 ---
-
 
 ## English (en)
 
-1. Visit: https://console.cloud.google.com/
-2. Sign in with your Google account.
-3. At the top, click “Select project” and then “New project”. Name it and click “Create”.
-4. With the project open, go to “APIs & Services” → “Library” in the left menu.
-5. Search for "YouTube Data API v3" and click "Enable".
-6. Go to “Credentials” → click “Create credentials” → “API key”.
-7. Copy the generated key and paste it into the plugin field “YouTube API Key”.
+Visit: https://console.cloud.google.com/
+
+Sign in with your Google account.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/0000.jpg)
+
+At the top, click “Select project” and then “New project”. Name it and click “Create”.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/000.jpg)  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/00.jpg)
+
+You will be redirected to the Google Cloud homepage and see a confirmation notification.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/0.jpg)
+
+Use the search icon to search for **YouTube Data API v3** and open the result.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/1.jpg)
+
+Click “Enable”.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/2.jpg)
+
+Go to **Credentials** → click **Create credentials** → **API key**.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/3.jpg)  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/4.jpg)
+
+Copy the generated key and use it with the command:  
+`.setyt YOUR_API_KEY`  
 
 No need to configure OAuth or consent screens.
 
@@ -20,27 +35,61 @@ No need to configure OAuth or consent screens.
 
 ## Português (pt)
 
-1. Acesse: https://console.cloud.google.com/
-2. Faça login com sua conta Google.
-3. No topo, clique em “Selecionar projeto” e depois em “Novo projeto”. Dê um nome e clique em “Criar”.
-4. Com o projeto aberto, vá no menu lateral em “APIs e serviços” → “Bibliotecas”.
-5. Pesquise por "YouTube Data API v3" e clique em "Ativar".
-6. Agora vá em “Credenciais” → clique em “Criar credenciais” → “Chave de API”.
-7. Copie a chave gerada. Use ela no plugin, no campo “YouTube API Key”.
+Acesse: https://console.cloud.google.com/
 
-Pronto. Não é necessário configurar OAuth nem tela de consentimento.
+Faça login com sua conta Google.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/0000.jpg)
+
+No topo, clique em “Selecionar projeto” e depois em “Novo projeto”. Dê um nome e clique em “Criar”.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/000.jpg)  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/00.jpg)
+
+Você será redirecionado para a home do Google Cloud e verá uma notificação de confirmação.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/0.jpg)
+
+Use o ícone de busca para procurar por **YouTube Data API v3** e clique no resultado.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/1.jpg)
+
+Clique em “Ativar”.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/2.jpg)
+
+Vá em **Credenciais** → clique em **Criar credenciais** → **Chave de API**.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/3.jpg)  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/4.jpg)
+
+Copie a chave gerada e use com o comando:  
+`.setyt SUA_API_KEY`  
+
+Não é necessário configurar OAuth nem tela de consentimento.
 
 ---
 
 ## Español (es)
 
-1. Ve a: https://console.cloud.google.com/
-2. Inicia sesión con tu cuenta de Google.
-3. En la parte superior, haz clic en “Seleccionar proyecto” y luego en “Nuevo proyecto”. Ponle un nombre y haz clic en “Crear”.
-4. Con el proyecto abierto, ve al menú lateral “APIs y servicios” → “Biblioteca”.
-5. Busca "YouTube Data API v3" y haz clic en "Activar".
-6. Luego ve a “Credenciales” → haz clic en “Crear credenciales” → “Clave de API”.
-7. Copia la clave generada y pégala en el campo del plugin “YouTube API Key”.
+Ve a: https://console.cloud.google.com/
+
+Inicia sesión con tu cuenta de Google.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/0000.jpg)
+
+En la parte superior, haz clic en “Seleccionar proyecto” y luego en “Nuevo proyecto”. Ponle un nombre y haz clic en “Crear”.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/000.jpg)  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/00.jpg)
+
+Serás redirigido a la página principal del Google Cloud y verás una notificación.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/0.jpg)
+
+Usa el ícono de búsqueda para buscar **YouTube Data API v3** y abre el resultado.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/1.jpg)
+
+Haz clic en “Activar”.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/2.jpg)
+
+Ve a **Credenciales** → haz clic en **Crear credenciales** → **Clave de API**.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/3.jpg)  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/4.jpg)
+
+Copia la clave generada y úsala con el comando:  
+`.setyt TU_API_KEY`  
 
 No necesitas configurar OAuth ni pantalla de consentimiento.
 
@@ -48,28 +97,60 @@ No necesitas configurar OAuth ni pantalla de consentimiento.
 
 ## Русский (ru)
 
-1. Перейдите на: https://console.cloud.google.com/
-2. Войдите в свою учетную запись Google.
-3. Вверху нажмите “Выбрать проект” → “Создать проект”. Укажите имя и нажмите “Создать”.
-4. С открытым проектом зайдите в меню слева “API и сервисы” → “Библиотека”.
-5. Найдите "YouTube Data API v3" и нажмите "Включить".
-6. Перейдите в “Учетные данные” → нажмите “Создать учетные данные” → “Ключ API”.
-7. Скопируйте сгенерированный ключ и вставьте его в поле “YouTube API Key” плагина.
+Перейдите на: https://console.cloud.google.com/
 
-Настраивать OAuth и экран согласия не требуется.
+Войдите в свою учетную запись Google.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/0000.jpg)
+
+В верхней части нажмите “Выбрать проект”, затем “Создать проект”. Укажите имя и нажмите “Создать”.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/000.jpg)  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/00.jpg)
+
+Вы будете перенаправлены на главную страницу Google Cloud и увидите уведомление.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/0.jpg)
+
+Нажмите значок поиска и найдите **YouTube Data API v3**, затем откройте результат.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/1.jpg)
+
+Нажмите “Включить”.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/2.jpg)
+
+Перейдите в **Учетные данные** → нажмите **Создать учетные данные** → **Ключ API**.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/3.jpg)  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/4.jpg)
+
+Скопируйте сгенерированный ключ и используйте его с командой:  
+`.setyt ВАШ_API_KEY`  
+
+OAuth и экран согласия настраивать не нужно.
 
 ---
 
 ## Français (fr)
 
-1. Allez sur : https://console.cloud.google.com/
-2. Connectez-vous avec votre compte Google.
-3. En haut, cliquez sur “Sélectionner un projet”, puis sur “Nouveau projet”. Donnez-lui un nom et cliquez sur “Créer”.
-4. Une fois le projet ouvert, allez dans le menu à gauche “API et services” → “Bibliothèque”.
-5. Recherchez "YouTube Data API v3" et cliquez sur "Activer".
-6. Ensuite, allez dans “Identifiants” → cliquez sur “Créer des identifiants” → “Clé API”.
-7. Copiez la clé générée et collez-la dans le champ “YouTube API Key” du plugin.
+Allez sur : https://console.cloud.google.com/
 
-Pas besoin de configurer OAuth ou d’écran de consentement.
+Connectez-vous avec votre compte Google.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/0000.jpg)
 
----
+En haut, cliquez sur “Sélectionner un projet”, puis “Nouveau projet”. Donnez-lui un nom et cliquez sur “Créer”.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/000.jpg)  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/00.jpg)
+
+Vous serez redirigé vers la page d’accueil de Google Cloud avec une notification de confirmation.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/0.jpg)
+
+Utilisez l’icône de recherche pour trouver **YouTube Data API v3** et ouvrez le résultat.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/1.jpg)
+
+Cliquez sur “Activer”.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/2.jpg)
+
+Allez dans **Identifiants** → cliquez sur **Créer des identifiants** → **Clé API**.  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/3.jpg)  
+![nowFy](https://raw.githubusercontent.com/soumaki/nowFy/refs/heads/main/yt/4.jpg)
+
+Copiez la clé générée et utilisez-la avec la commande suivante :  
+`.setyt VOTRE_CLÉ_API`  
+
+Aucune configuration OAuth ou écran de consentement n’est nécessaire.
