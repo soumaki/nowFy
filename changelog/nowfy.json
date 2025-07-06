@@ -1,8 +1,56 @@
 {
-  "current_version": "1.0.1",
+  "current_version": "1.0.2",
   "image_url": "https://i.postimg.cc/5tkfW1xF/nowplaying.jpg",
-  "last_updated": "2024-03-20",
+  "last_updated": "2025-07-06",
   "changelog": [
+    {
+      "version": "1.0.2",
+      "date": "2025-07-06",
+      "sections": {
+        "english": [
+          "Integration with Last.FM as an alternative to Legacy mode (for users who can’t or prefer not to use the Spotify API)",
+          "Media Source engine, exclusive to nowFy, for more accurate and reliable API data fetching",
+          "New selector for music links: choose between direct Spotify link or universal song.link",
+          "Option to customize the text of the music link",
+          "Ability to display your Last.FM profile in the caption",
+          "Added .helpfm command to list available Last.FM commands",
+          "Initial theme support introduced (currently only available in Legacy mode)",
+          "Available themes in Legacy mode: Legacy, LastFy, LastFy Light, LastFy Dark, Mini Player",
+          "Settings structure reorganized for better usability",
+          "Spotify Legacy: credentials and configuration now grouped in a more isolated and secure section",
+          "Optimized .code command: just paste the music URL, no manual code extraction needed",
+          "Error messages and notifications revised to be clearer, friendlier, and automatically translated",
+          "Missing translations added, improving multilingual support",
+          "General plugin structure polished for better navigation and experience",
+          "Various code improvements for better stability and performance",
+          "Adjustments in how data is displayed across various commands",
+          "Common issues like authentication, permissions, and playback now return more helpful messages",
+          "Fixed inconsistent behaviors in various scenarios",
+          "Probably forgot something, been coding all week nonstop"
+        ],
+        "russian": [
+          "Интеграция с Last.FM как альтернатива режиму Legacy (для пользователей, которые не могут или не хотят использовать Spotify API)",
+          "Движок Источник медиа, эксклюзивная функция nowFy, для более точного и надёжного получения данных через API",
+          "Новый селектор для ссылок на музыку: выбор между прямой ссылкой Spotify или универсальной через song.link",
+          "Возможность настраивать текст музыкальной ссылки",
+          "Отображение профиля Last.FM в подписи",
+          "Добавлена команда .helpfm для отображения всех доступных команд Last.FM",
+          "Начальная поддержка системы тем (пока доступна только в режиме Legacy)",
+          "Темы в режиме Legacy: Legacy, LastFy, LastFy Light, LastFy Dark, Mini Player",
+          "Структура настроек переработана для большего удобства",
+          "Spotify Legacy: конфигурация и учётные данные теперь находятся в отдельной защищённой области",
+          "Команда .code оптимизирована: просто вставьте ссылку на трек, код извлекать вручную больше не нужно",
+          "Сообщения об ошибках и уведомления переработаны, стали понятнее, дружелюбнее и автоматически переводятся",
+          "Добавлены недостающие переводы для расширенной языковой поддержки",
+          "Общая структура плагина улучшена для удобства использования",
+          "Улучшения в коде для повышения стабильности и производительности",
+          "Настроена корректная обработка данных в различных командах",
+          "Типичные ошибки, такие как авторизация, доступ и воспроизведение, теперь сопровождаются более понятными сообщениями",
+          "Исправлены некорректные сценарии поведения",
+          "Возможно, что-то упустил — неделя была полностью посвящена этому коду"
+        ]
+      }
+    },
     {
       "version": "1.0.1",
       "date": "2024-03-20",
