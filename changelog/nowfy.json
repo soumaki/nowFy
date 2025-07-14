@@ -1,8 +1,56 @@
 {
-  "current_version": "1.0.2",
+  "current_version": "1.0.3",
   "image_url": "https://i.postimg.cc/5tkfW1xF/nowplaying.jpg",
-  "last_updated": "2025-07-06",
+  "last_updated": "2025-07-14",
   "changelog": [
+    {
+      "version": "1.0.3",
+      "date": "2025-07-14",
+      "sections": {
+        "english": [
+          "NEW THEMES",
+          "New themes were added to Spotify Legacy, inspired by Discord’s look. Last.FM now supports visual themes, including a custom theme called CustomFM. In this theme, you can choose to use the album cover as background or pick a custom color. Text colors can also be customized.",
+          "In the customization section, you’ll find a color generator. Just copy and paste your desired values for background and text. The new available themes are:",
+          "Spotify Legacy: Discord, Discord Light, Apple (with custom text option on the card)",
+          "Last.FM: Default, Darker, CustomFM",
+          "More visual options will be added in future updates.",
+          "NEW FEATURES – Spotify Legacy",
+          ".vol — You can now adjust Spotify playback volume with the command .vol 60, where 60 is the desired volume level (0 to 100). Requires Premium account.",
+          ".like — Using .like will add the currently playing track to your liked songs playlist. Using it again will remove the like.",
+          ".repeat and .shuffle — Use .repeat to toggle repeat mode, and .shuffle to toggle shuffle mode.",
+          "Note: errors like 403 indicate no active device or missing permissions. Start playback manually on an app or player before using commands.",
+          ".queue — Adds a song to the current playback queue. After searching with .search, use .queue 1 to add the first (or any) item to the queue. Requires active device and updated permissions.",
+          ".mix (experimental) — Creates a new playlist based on a track or artist. For example, .mix Alan Walker will create a playlist with similar tracks. The playlist is saved automatically to your account.",
+          "IMPROVEMENTS",
+          "When using .fm, nowFy automatically checks if your Last.FM credentials are correctly set. The reply will be your last played track synced with your Last.FM account.",
+          "Sections were reorganized for clarity. There’s a new category called Advanced Options after Theme Style. Available features in Advanced Options: Apple Caption, MinuteBar Style, MusicBar, Open on Spotify, Spotify Link.",
+          "The interface displaying your Last.FM username and API Key was moved to a more private section.",
+          "IMPORTANT: If you use Spotify Legacy, update your permissions using .update with your Client ID, then use .code with the new URL to validate the token.",
+          "Use .myfm to list all LastFM commands. Use .help for more."
+        ],
+        "russian": [
+          "НОВЫЕ ТЕМЫ",
+          "В Spotify Legacy добавлены новые темы, вдохновленные дизайном Discord. Last.FM теперь поддерживает визуальные темы, включая пользовательскую тему CustomFM. В этой теме можно выбрать использовать обложку альбома как фон или выбрать свой цвет. Цвета текста тоже можно настроить.",
+          "В разделе настройки есть генератор цветов. Просто скопируйте и вставьте нужные значения для фона и текста. Новые доступные темы:",
+          "Spotify Legacy: Discord, Discord Light, Apple (с пользовательским текстом на карточке)",
+          "Last.FM: Default, Darker, CustomFM",
+          "В будущих обновлениях появятся новые визуальные опции.",
+          "НОВЫЕ ФУНКЦИИ — Spotify Legacy",
+          ".vol — Регулирует громкость Spotify. Например, .vol 60 установит уровень громкости на 60%. Требуется Premium аккаунт.",
+          ".like — Добавляет текущий трек в любимое. Повторное использование удалит лайк.",
+          ".repeat и .shuffle — Переключает режим повтора и случайного воспроизведения.",
+          "Примечание: ошибка 403 означает, что нет активного устройства или недостаточно прав. Запустите воспроизведение вручную перед использованием команд.",
+          ".queue — Добавляет трек в очередь. После .search используйте .queue 1 для добавления первого результата. Требуется активное устройство.",
+          ".mix (экспериментально) — Создаёт плейлист по треку или исполнителю. Пример: .mix Alan Walker. Плейлист сохраняется в аккаунте.",
+          "УЛУЧШЕНИЯ",
+          "При использовании .fm nowFy проверяет правильность логина и API-ключа Last.FM. Ответ — последний проигранный трек.",
+          "Настройки были переработаны. Новая категория Advanced Options после Theme Style. В ней: Apple Caption, MinuteBar Style, MusicBar, Open on Spotify, Spotify Link.",
+          "Интерфейс отображения логина и ключа Last.FM перемещён в приватную зону.",
+          "ВАЖНО: Обновите разрешения с помощью .update и .code, чтобы все функции Spotify Legacy работали.",
+          "Команда .myfm покажет все команды Last.FM. Используйте .help для справки."
+        ]
+      }
+    },
     {
       "version": "1.0.2",
       "date": "2025-07-06",
