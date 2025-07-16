@@ -1,0 +1,497 @@
+{
+  "plugin_info": {
+    "name": "Nowfy Commands API",
+    "version": "1.0.0",
+    "description": "External configuration for Nowfy plugin commands",
+    "last_updated": "2024-01-01",
+    "compatibility": {
+      "min_plugin_version": "1.0.0",
+      "max_plugin_version": "2.0.0"
+    }
+  },
+  "commands": {
+    ".list": {
+      "enabled": true,
+      "description": {
+        "pt": "Lista as músicas da fila de reprodução atual",
+        "en": "Lists the songs in the current playback queue",
+        "es": "Lista las canciones de la cola de reproducción actual",
+        "fr": "Liste les chansons de la file d'attente actuelle",
+        "ru": "Показывает треки в текущей очереди воспроизведения"
+      },
+      "category": "playback",
+      "requires_auth": true,
+      "spotify_endpoint": "/v1/me/player/queue",
+      "http_method": "GET",
+      "response_format": "list",
+      "max_items": 20,
+      "display_format": {
+        "header": {
+          "pt": "Fila de reprodução",
+          "en": "Playback queue",
+          "es": "Cola de reproducción",
+          "fr": "File d'attente de lecture",
+          "ru": "Очередь воспроизведения"
+        },
+        "item_template": {
+          "pt": "{position}. {track_name} - {artist_name}",
+          "en": "{position}. {track_name} - {artist_name}",
+          "es": "{position}. {track_name} - {artist_name}",
+          "fr": "{position}. {track_name} - {artist_name}",
+          "ru": "{position}. {track_name} - {artist_name}"
+        },
+        "empty_message": {
+          "pt": "A fila está vazia",
+          "en": "The queue is empty",
+          "es": "La cola está vacía",
+          "fr": "La file d'attente est vide",
+          "ru": "Очередь пуста"
+        },
+        "footer": {
+          "pt": "Total: {count} músicas",
+          "en": "Total: {count} tracks",
+          "es": "Total: {count} canciones",
+          "fr": "Total : {count} morceaux",
+          "ru": "Всего: {count} треков"
+        }
+      },
+      "parameters": {
+        "limit": {
+          "type": "integer",
+          "default": 10,
+          "min": 1,
+          "max": 50,
+          "description": {
+            "pt": "Número de músicas para exibir",
+            "en": "Number of tracks to display",
+            "es": "Número de canciones a mostrar",
+            "fr": "Nombre de morceaux à afficher",
+            "ru": "Количество треков для отображения"
+          }
+        }
+      },
+      "error_handling": {
+        "no_active_device": {
+          "pt": "Nenhum dispositivo ativo encontrado",
+          "en": "No active device found",
+          "es": "No se encontró ningún dispositivo activo",
+          "fr": "Aucun appareil actif trouvé",
+          "ru": "Нет активного устройства"
+        },
+        "not_playing": {
+          "pt": "Nenhuma música está tocando",
+          "en": "No music currently playing",
+          "es": "No hay música reproduciéndose",
+          "fr": "Aucune musique en cours de lecture",
+          "ru": "Музыка не воспроизводится"
+        },
+        "auth_error": {
+          "pt": "Autenticação necessária",
+          "en": "Authentication required",
+          "es": "Autenticación requerida",
+          "fr": "Authentification requise",
+          "ru": "Требуется авторизация"
+        }
+      }
+    },
+    ".s": {
+      "enabled": true,
+      "description": {
+        "pt": "Pausa a reprodução atual",
+        "en": "Pauses current playback",
+        "es": "Pausa la reproducción actual",
+        "fr": "Met en pause la lecture en cours",
+        "ru": "Приостанавливает текущее воспроизведение"
+      },
+      "category": "playback_control",
+      "requires_auth": true,
+      "spotify_endpoint": "/v1/me/player/pause",
+      "http_method": "PUT",
+      "response_format": "status",
+      "success_message": {
+        "pt": "Reprodução pausada",
+        "en": "Playback paused",
+        "es": "Reproducción pausada",
+        "fr": "Lecture en pause",
+        "ru": "Воспроизведение приостановлено"
+      },
+      "error_handling": {
+        "no_active_device": {
+          "pt": "Nenhum dispositivo ativo encontrado",
+          "en": "No active device found",
+          "es": "No se encontró ningún dispositivo ativo",
+          "fr": "Aucun appareil actif trouvé",
+          "ru": "Нет активного устройства"
+        },
+        "already_paused": {
+          "pt": "A reprodução já está pausada",
+          "en": "Playback is already paused",
+          "es": "La reproducción ya está pausada",
+          "fr": "La lecture est déjà en pause",
+          "ru": "Воспроизведение уже приостановлено"
+        },
+        "auth_error": {
+          "pt": "Autenticação necessária",
+          "en": "Authentication required",
+          "es": "Autenticación requerida",
+          "fr": "Authentification requise",
+          "ru": "Требуется авторизация"
+        }
+      }
+    },
+    ".n": {
+      "enabled": true,
+      "description": {
+        "pt": "Pula para a próxima música",
+        "en": "Skips to the next track",
+        "es": "Salta a la siguiente canción",
+        "fr": "Passe à la piste suivante",
+        "ru": "Переходит к следующему треку"
+      },
+      "category": "playback_control",
+      "requires_auth": true,
+      "spotify_endpoint": "/v1/me/player/next",
+      "http_method": "POST",
+      "response_format": "status",
+      "success_message": {
+        "pt": "Próxima música",
+        "en": "Next track",
+        "es": "Siguiente canción",
+        "fr": "Piste suivante",
+        "ru": "Следующий трек"
+      },
+      "error_handling": {
+        "no_active_device": {
+          "pt": "Nenhum dispositivo ativo encontrado",
+          "en": "No active device found",
+          "es": "No se encontró ningún dispositivo ativo",
+          "fr": "Aucun appareil actif trouvé",
+          "ru": "Нет активного устройства"
+        },
+        "no_next_track": {
+          "pt": "Não há próxima música disponível",
+          "en": "No next track available",
+          "es": "No hay siguiente canción disponible",
+          "fr": "Aucune piste suivante disponible",
+          "ru": "Следующий трек недоступен"
+        },
+        "auth_error": {
+          "pt": "Autenticação necessária",
+          "en": "Authentication required",
+          "es": "Autenticación requerida",
+          "fr": "Authentification requise",
+          "ru": "Требуется авторизация"
+        }
+      }
+    },
+    ".b": {
+      "enabled": true,
+      "description": {
+        "pt": "Volta para a música anterior",
+        "en": "Goes to the previous track",
+        "es": "Vuelve a la canción anterior",
+        "fr": "Revient à la piste précédente",
+        "ru": "Переходит к предыдущему треку"
+      },
+      "category": "playback_control",
+      "requires_auth": true,
+      "spotify_endpoint": "/v1/me/player/previous",
+      "http_method": "POST",
+      "response_format": "status",
+      "success_message": {
+        "pt": "Música anterior",
+        "en": "Previous track",
+        "es": "Canción anterior",
+        "fr": "Piste précédente",
+        "ru": "Предыдущий трек"
+      },
+      "error_handling": {
+        "no_active_device": {
+          "pt": "Nenhum dispositivo ativo encontrado",
+          "en": "No active device found",
+          "es": "No se encontró ningún dispositivo ativo",
+          "fr": "Aucun appareil actif trouvé",
+          "ru": "Нет активного устройства"
+        },
+        "no_previous_track": {
+          "pt": "Não há música anterior disponível",
+          "en": "No previous track available",
+          "es": "No hay canción anterior disponible",
+          "fr": "Aucune piste précédente disponible",
+          "ru": "Предыдущий трек недоступен"
+        },
+        "auth_error": {
+          "pt": "Autenticação necessária",
+          "en": "Authentication required",
+          "es": "Autenticación requerida",
+          "fr": "Authentification requise",
+          "ru": "Требуется авторизация"
+        }
+      }
+    },
+    ".p": {
+      "enabled": true,
+      "description": {
+        "pt": "Retoma a reprodução",
+        "en": "Resumes playback",
+        "es": "Reanuda la reproducción",
+        "fr": "Reprend la lecture",
+        "ru": "Возобновляет воспроизведение"
+      },
+      "category": "playback_control",
+      "requires_auth": true,
+      "spotify_endpoint": "/v1/me/player/play",
+      "http_method": "PUT",
+      "response_format": "status",
+      "success_message": {
+        "pt": "Reprodução retomada",
+        "en": "Playback resumed",
+        "es": "Reproducción reanudada",
+        "fr": "Lecture reprise",
+        "ru": "Воспроизведение возобновлено"
+      },
+      "error_handling": {
+        "no_active_device": {
+          "pt": "Nenhum dispositivo ativo encontrado",
+          "en": "No active device found",
+          "es": "No se encontró ningún dispositivo ativo",
+          "fr": "Aucun appareil actif trouvé",
+          "ru": "Нет активного устройства"
+        },
+        "already_playing": {
+          "pt": "A reprodução já está ativa",
+          "en": "Playback is already active",
+          "es": "La reproducción ya está activa",
+          "fr": "La lecture est déjà active",
+          "ru": "Воспроизведение уже активно"
+        },
+        "auth_error": {
+          "pt": "Autenticação necessária",
+          "en": "Authentication required",
+          "es": "Autenticación requerida",
+          "fr": "Authentification requise",
+          "ru": "Требуется авторизация"
+        }
+      }
+    },
+    ".like": {
+      "enabled": true,
+      "description": {
+        "pt": "Adiciona a música atual aos favoritos",
+        "en": "Adds the current track to favorites",
+        "es": "Agrega la canción actual a favoritos",
+        "fr": "Ajoute la piste actuelle aux favoris",
+        "ru": "Добавляет текущий трек в избранное"
+      },
+      "category": "library",
+      "requires_auth": true,
+      "spotify_endpoint": "/v1/me/tracks",
+      "http_method": "PUT",
+      "response_format": "status",
+      "success_message": {
+        "pt": "Adicionado aos favoritos",
+        "en": "Added to favorites",
+        "es": "Agregado a favoritos",
+        "fr": "Ajouté aux favoris",
+        "ru": "Добавлено в избранное"
+      },
+      "error_handling": {
+        "no_active_device": {
+          "pt": "Nenhum dispositivo ativo encontrado",
+          "en": "No active device found",
+          "es": "No se encontró ningún dispositivo ativo",
+          "fr": "Aucun appareil actif trouvé",
+          "ru": "Нет активного устройства"
+        },
+        "already_liked": {
+          "pt": "A música já está nos favoritos",
+          "en": "Track already in favorites",
+          "es": "La canción ya está en favoritos",
+          "fr": "La piste est déjà dans les favoris",
+          "ru": "Трек уже в избранном"
+        },
+        "auth_error": {
+          "pt": "Autenticação necessária",
+          "en": "Authentication required",
+          "es": "Autenticación requerida",
+          "fr": "Authentification requise",
+          "ru": "Требуется авторизация"
+        }
+      },
+      "track_id_required": true
+    },
+    ".repeat": {
+      "enabled": true,
+      "description": {
+        "pt": "Alterna o modo de repetição",
+        "en": "Toggles repeat mode",
+        "es": "Alterna el modo de repetición",
+        "fr": "Active/désactive le mode répétition",
+        "ru": "Переключает режим повтора"
+      },
+      "category": "playback_control",
+      "requires_auth": true,
+      "spotify_endpoint": "/v1/me/player/repeat",
+      "http_method": "PUT",
+      "response_format": "status",
+      "modes": {
+        "off": {
+          "value": "off",
+          "message": {
+            "pt": "Repetição desativada",
+            "en": "Repeat disabled",
+            "es": "Repetición desactivada",
+            "fr": "Répétition désactivée",
+            "ru": "Повтор отключен"
+          }
+        },
+        "track": {
+          "value": "track",
+          "message": {
+            "pt": "Repetindo música atual",
+            "en": "Repeating current track",
+            "es": "Repitiendo la canción actual",
+            "fr": "Répétition de la piste actuelle",
+            "ru": "Повтор текущего трека"
+          }
+        },
+        "context": {
+          "value": "context",
+          "message": {
+            "pt": "Repetindo playlist/álbum",
+            "en": "Repeating playlist/album",
+            "es": "Repitiendo lista/álbum",
+            "fr": "Répétition de la playlist/album",
+            "ru": "Повтор плейлиста/альбома"
+          }
+        }
+      },
+      "error_handling": {
+        "no_active_device": {
+          "pt": "Nenhum dispositivo ativo encontrado",
+          "en": "No active device found",
+          "es": "No se encontró ningún dispositivo ativo",
+          "fr": "Aucun appareil actif trouvé",
+          "ru": "Нет активного устройства"
+        },
+        "auth_error": {
+          "pt": "Autenticação necessária",
+          "en": "Authentication required",
+          "es": "Autenticación requerida",
+          "fr": "Authentification requise",
+          "ru": "Требуется авторизация"
+        }
+      }
+    },
+    ".shuffle": {
+      "enabled": true,
+      "description": {
+        "pt": "Alterna o modo aleatório",
+        "en": "Toggles shuffle mode",
+        "es": "Alterna el modo aleatorio",
+        "fr": "Active/désactive le mode aléatoire",
+        "ru": "Переключает режим случайного воспроизведения"
+      },
+      "category": "playback_control",
+      "requires_auth": true,
+      "spotify_endpoint": "/v1/me/player/shuffle",
+      "http_method": "PUT",
+      "response_format": "status",
+      "states": {
+        "on": {
+          "value": true,
+          "message": {
+            "pt": "Modo aleatório ativado",
+            "en": "Shuffle mode enabled",
+            "es": "Modo aleatorio activado",
+            "fr": "Mode aléatoire activé",
+            "ru": "Случайное воспроизведение включено"
+          }
+        },
+        "off": {
+          "value": false,
+          "message": {
+            "pt": "Modo aleatório desativado",
+            "en": "Shuffle mode disabled",
+            "es": "Modo aleatorio desactivado",
+            "fr": "Mode aléatoire désactivé",
+            "ru": "Случайное воспроизведение отключено"
+          }
+        }
+      },
+      "error_handling": {
+        "no_active_device": {
+          "pt": "Nenhum dispositivo ativo encontrado",
+          "en": "No active device found",
+          "es": "No se encontró ningún dispositivo ativo",
+          "fr": "Aucun appareil actif trouvé",
+          "ru": "Нет активного устройства"
+        },
+        "auth_error": {
+          "pt": "Autenticação necessária",
+          "en": "Authentication required",
+          "es": "Autenticación requerida",
+          "fr": "Authentification requise",
+          "ru": "Требуется авторизация"
+        }
+      }
+    }
+  },
+  "categories": {
+    "playback": {
+      "description": {
+        "pt": "Comandos relacionados à informação de reprodução",
+        "en": "Commands related to playback information",
+        "es": "Comandos relacionados con la información de reproducción",
+        "fr": "Commandes liées aux informations de lecture",
+        "ru": "Команды, связанные с информацией о воспроизведении"
+      },
+      "icon": ""
+    },
+    "playback_control": {
+      "description": {
+        "pt": "Comandos para controlar a reprodução",
+        "en": "Commands to control playback",
+        "es": "Comandos para controlar la reproducción",
+        "fr": "Commandes pour contrôler la lecture",
+        "ru": "Команды для управления воспроизведением"
+      },
+      "icon": ""
+    },
+    "library": {
+      "description": {
+        "pt": "Comandos relacionados à biblioteca do usuário",
+        "en": "Commands related to user library",
+        "es": "Comandos relacionados con la biblioteca del usuario",
+        "fr": "Commandes liées à la bibliothèque utilisateur",
+        "ru": "Команды, связанные с библиотекой пользователя"
+      },
+      "icon": ""
+    }
+  },
+  "global_settings": {
+    "cache_duration": 300,
+    "max_retries": 3,
+    "timeout": 10,
+    "rate_limit": {
+      "requests_per_minute": 60,
+      "burst_limit": 10
+    },
+    "localization": {
+      "default_language": "en",
+      "supported_languages": ["en", "pt", "es", "fr", "ru"]
+    },
+    "logging": {
+      "enabled": true,
+      "level": "info",
+      "include_timestamps": true
+    }
+  },
+  "metadata": {
+    "schema_version": "1.0",
+    "generated_at": "2024-01-01T00:00:00Z",
+    "checksum": "sha256:placeholder",
+    "update_url": "https://api.example.com/nowfy/commands.json",
+    "fallback_url": "https://backup.example.com/nowfy/commands.json"
+  }
+} 
