@@ -6,7 +6,7 @@ This guide will help you set up your Spotify credentials and use the plugin to d
 
 ## 1. Create a Spotify Developer App
 
-- Go to [https://developer.spotify.com/dashboard](https://developer.spotify.com/dashboard)
+- Go to [https://developer.spotify.com/dashboard](https://developer.spotify.com/dashboard/create)
 - Click **"Create an App"**
 - Fill in the app name and description
 - **Add a Redirect URI** (required), MANDATORY:
